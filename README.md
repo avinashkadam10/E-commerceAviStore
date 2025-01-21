@@ -52,3 +52,7 @@ Make sure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/avinashkadam10/E-commerceAviStore.git
+
+2. Live Link: 
+
+https://e-commerceavistore.onrender.com/
