@@ -40,7 +40,6 @@ This project is a basic front-end application built with ReactJS to fetch and di
 - **Framework**: ReactJS
 - **API**: [EscuelaJS Products API](https://api.escuelajs.co/api/v1/products)
 - **Styling**: Plain CSS and Bootstrap
-- **Version Control**: Git (GitHub repository)
 
 ## Setup Instructions
 
@@ -52,4 +51,4 @@ Make sure you have the following installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ecommerce-product-list.git
+   git clone https://github.com/avinashkadam10/E-commerceAviStore.git
