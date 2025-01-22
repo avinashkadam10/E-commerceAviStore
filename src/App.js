@@ -8,6 +8,7 @@ import CartPage from "./pages/CartPage";
 const App = () => {
   const [cart, setCart] = useState([]);
 
+  // Function to add a product to the cart
   const addToCart = (product) => {
     const existing = cart.find((item) => item.id === product.id);
     if (existing) {
@@ -23,8 +24,18 @@ const App = () => {
     }
   };
 
+  // Function to remove a product from the cart
   const removeFromCart = (id) => {
     setCart(cart.filter((item) => item.id !== id));
+  };
+
+  // Function to update the quantity of a product in the cart
+  const updateCartQuantity = (productId, newQuantity) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === productId ? { ...item, quantity: Math.max(newQuantity, 1) } : item
+      )
+    );
   };
 
   return (
@@ -38,7 +49,13 @@ const App = () => {
         />
         <Route
           path="/cart"
-          element={<CartPage cart={cart} removeFromCart={removeFromCart} />}
+          element={
+            <CartPage
+              cart={cart}
+              removeFromCart={removeFromCart}
+              updateCartQuantity={updateCartQuantity}
+            />
+          }
         />
       </Routes>
     </Router>

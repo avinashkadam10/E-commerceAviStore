@@ -114,7 +114,6 @@ const HomePage = ({ addToCart }) => {
           <option value="">Select Sorting</option>
           <option value="priceLowToHigh">Price: Low to High</option>
           <option value="priceHighToLow">Price: High to Low</option>
-          <option value="ratingHighToLow">Rating: High to Low</option>
         </select>
       </div>
 
