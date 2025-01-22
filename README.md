@@ -1,58 +1,39 @@
 # E-commerce Product - AVISTORE
 
-This project is a basic front-end application built with ReactJS to fetch and display products from an API. It includes core features such as product listing, filtering, product details, sorting, and adding products to a cart.
-
-## Features
-
-### Core Features
-- **Fetch and Display Products**: Fetch products from the API and display them with essential details.
-  - Product image
-  - Title
-  - Price
-  - Category
-  
-- **View Product Details**: On clicking a product, users are navigated to a detailed page displaying:
-  - Title
-  - Description
-  - Price
-  - Rating
-  - Category
-  - Full-size product image
-
-- **Filter and Search**:
-  - A search bar allows users to filter products by name.
-  - A dropdown allows users to filter products by category (e.g., "electronics", "headset").
-
-- **Sorting**:
-  - Users can sort products by:
-    - Price (low to high, high to low)
-    - Rating (high to low)
-
-- **Add to Cart**:
-  - Users can add products to a cart.
-  - The total number of items in the cart is displayed on a cart icon in the header.
-  
-- **Cart Page**: A "Cart" page displays:
-  - Products in the cart with quantity adjustment.
-  - Total price calculation.
+This project is a basic front-end application built with ReactJS to fetch and display products from an API. 
+It includes features such as product filtering, product details, sorting, and adding products to a cart.
 
 ## Technologies Used
-- **Framework**: ReactJS
-- **API**: [EscuelaJS Products API](https://api.escuelajs.co/api/v1/products)
-- **Styling**: Plain CSS and Bootstrap
+- Framework: ReactJS
+- API: EscuelaJS Products API (https://api.escuelajs.co/api/v1/products)
+- Styling: Plain CSS and Bootstrap
 
 ## Setup Instructions
 
 ### Prerequisites
-Make sure you have the following installed:
+Ensure you have the following installed:
 - Node.js
 - npm (Node package manager)
 
-### Installation
+### Installation Steps
 1. Clone the repository:
-   ```bash
+
    git clone https://github.com/avinashkadam10/E-commerceAviStore.git
 
-2. Live Link: 
+2. Navigate to the project directory:
+   cd E-commerceAviStore
 
-https://e-commerceavistore.onrender.com/
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm start
+
+5. Open your browser and go to http://localhost:3000 to view the application.
+
+### Live Link
+Access the live version of the application here:
+
+E-commerce Product-AVISTORE: https://e-commerceavistore.onrender.com/
+
+Note: Please wait for a few seconds or a minute for the application to load, as it is hosted on a free hosting platform.
