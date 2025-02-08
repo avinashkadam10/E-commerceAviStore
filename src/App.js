@@ -28,12 +28,18 @@ const App = () => {
   const removeFromCart = (id) => {
     setCart(cart.filter((item) => item.id !== id));
   };
+  // Function to remove all products from the cart
+  const removeAll = () => {
+    setCart([]);
+  };
 
   // Function to update the quantity of a product in the cart
   const updateCartQuantity = (productId, newQuantity) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item.id === productId ? { ...item, quantity: Math.max(newQuantity, 1) } : item
+        item.id === productId
+          ? { ...item, quantity: Math.max(newQuantity, 1) }
+          : item
       )
     );
   };
@@ -54,6 +60,7 @@ const App = () => {
               cart={cart}
               removeFromCart={removeFromCart}
               updateCartQuantity={updateCartQuantity}
+              removeAll={removeAll}
             />
           }
         />

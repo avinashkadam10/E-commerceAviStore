@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../components/Footer";
 
-const CartPage = ({ cart, removeFromCart, updateCartQuantity }) => {
+const CartPage = ({ cart, removeFromCart, updateCartQuantity , removeAll }) => {
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
 
-  return (
+  return (<>
     <div className="container my-4">
       <h1>Your Cart</h1>
 
@@ -48,12 +48,19 @@ const CartPage = ({ cart, removeFromCart, updateCartQuantity }) => {
             Remove
           </button>
         </div>
+        
       ))}
-
+      <button
+            className="btn btn-danger"
+            onClick={() => removeAll()}
+          >
+            Remove All
+          </button>
       <h3>Total: ${totalPrice.toFixed(2)}</h3>
       {/* Footer Component */}
       <Footer />
     </div>
+    </>
   );
 };
 
